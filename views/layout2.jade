@@ -4,26 +4,12 @@ head
     |   
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     |   
-    title Party Rock
+    title Parallax Template - Materialize
     // CSS
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     |   
     link(href='materialize/dist/css/materialize.min.css', type='text/css', rel='stylesheet', media='screen,projection')
     |   
     link(href='materialize/templates/parallax-template/css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
-  body
-    nav.white(role='navigation')
-      .nav-wrapper.container
-        a#logo-container.brand-logo(href='#') Logo
-        |       
-        ul.right.hide-on-med-and-down
-          li
-            a(href='#') Sign in 
-        ul.right.hide-on-med-and-down
-          li
-            a(href='#') Register      
-         
-        a.button-collapse(href='#', data-activates='nav-mobile')
-          i.material-icons menu
     | 
     block content

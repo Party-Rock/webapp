@@ -1,0 +1,66 @@
+extends layout2
+//- link href= "materialize/dist/css/materialize.min.css"
+block content
+    #index-banner.parallax-container
+      .parallax
+        img(src='images/casa-chida-3.jpg', alt='Unsplashed background img 1')  
+    .container
+      .section
+        // Icon Section
+        .row
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons flash_on          
+              h5.center Alberca
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons group
+              h5.center Alcohol y cigarrillos
+     
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons surround_sound           
+              h5.center Musica
+        .row
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons query_builder        
+              h5.center Horario Flexible
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons settings_remote
+              h5.center WiFi
+     
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons delete           
+              h5.center Servicio de Limpieza
+        .row.center
+            a#download-button.btn-large.waves-effect.waves-light.blue.lighten-1(href='http://materializecss.com/getting-started.html') Rentar
+
+    footer.page-footer.red
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Company Bio
+            p.grey-text.text-lighten-4
+              | We are a team of college students working on this project like it&apos;s our full time job. Any amount would help support and continue development on this project and is greatly appreciated.      
+          .col.l6.s12
+            h5.white-text Settings
+            p.grey-text.text-lighten-4
+              | We are a team of college students working on this project like it&apos;s our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
+         
+      .footer-copyright
+        .container
+          | Made by 
+          a.brown-text.text-lighten-3(href='http://materializecss.com') Materialize
+    // Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='materialize/dist/js/materialize.min.js')
+    script(src='materialize/templates/parallax-template/js/init.js')
