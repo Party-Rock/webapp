@@ -1,44 +1,66 @@
-extends layout
+extends base_with_navbar
 //link href= "materialize/dist/css/materialize.min.css"
 block content
-    #index-banner.parallax-container
-      .section.no-pad-bot
-        ul.pagination
-          li.disabled
-            a(href='#!')
-              i.material-icons chevron_left    
-            li.active
-              a(href='#!') 1   
-            li.waves-effect
-              a(href='#!') 2    
-            li.waves-effect
-              a(href='#!') 3
-            li.waves-effect
-              a(href='#!') 4    
-            li.waves-effect
-              a(href='#!') 5   
-            li.waves-effect
-              a(href='#!')
-              i.material-icons chevron_right     
-    footer.page-footer.red
+  #index-banner.parallax-container
+    .section.no-pad-bot
       .container
-        .row
-          .col.l6.s12
-            h5.white-text Company Bio          
-            p.grey-text.text-lighten-4
-              | We are a team of college students working on this project like it&apos;s our full time job. Any amount would help support and continue development on this project and is greatly appreciated.       
-          .col.l6.s12
-            h5.white-text Settings          
-            p.grey-text.text-lighten-4
-              | We are a team of college students working on this project like it&apos;s our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
-          |          
-      .footer-copyright
-        .container
-          | Made by 
-          a.brown-text.text-lighten-3(href='http://materializecss.com') Materialize
-    // Scripts
-    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-    |   
-    script(src='materialize/dist/js/materialize.min.js')
-    |   
-    script(src='materialize/templates/parallax-template/js/init.js')
+        .slider
+          ul.slides
+            li
+              img(src='http://lorempixel.com/580/250/nature/1')  
+            li
+              img(src='http://lorempixel.com/580/250/nature/2')
+            li
+              img(src='http://lorempixel.com/580/250/nature/3')    
+            li
+              img(src='http://lorempixel.com/580/250/nature/4')
+        // Dropdown Trigger
+  a.dropdown-button.btn(data-beloworigin='false', href='#', data-activates='dropdown1') Location 
+  ul#dropdown1.dropdown-content
+    li
+      a(href='#!') one   
+    li.divider 
+    li
+      a(href='#!') two  
+    li.divider     
+    li
+      a(href='#!') three
+  .container
+    .section
+      // Icon Section
+      .row
+        .col.s12.m4
+          .icon-block
+            h2.center.red-text
+              i.material-icons flash_on          
+            h5.center Alberca
+        .col.s12.m4
+          .icon-block
+            h2.center.red-text
+              i.material-icons group
+            h5.center Alcohol y cigarrillos
+     
+        .col.s12.m4
+          .icon-block
+            h2.center.red-text
+              i.material-icons surround_sound           
+            h5.center Musica
+      .row
+        .col.s12.m4
+          .icon-block
+            h2.center.red-text
+              i.material-icons query_builder        
+            h5.center Horario Flexible
+        .col.s12.m4
+          .icon-block
+            h2.center.red-text
+              i.material-icons settings_remote
+            h5.center WiFi
+     
+        .col.s12.m4
+          .icon-block
+            h2.center.red-text
+              i.material-icons delete           
+            h5.center Servicio de Limpieza
+      .row.center
+        a#download-button.btn-large.waves-effect.waves-light.blue.lighten-1(href='http://materializecss.com/getting-started.html') Rentar
