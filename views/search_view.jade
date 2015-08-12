@@ -5,16 +5,24 @@ block content
       .container
         .row
           .col.s12.m4.l4
-             a.dropdown-button.btn(data-beloworigin='false', href='#', data-activates='dropdown1') Location 
-             ul#dropdown1.dropdown-content
-               li
-                 a(href='#!') one   
-               li.divider 
-               li
-                 a(href='#!') two  
-               li.divider     
-               li
-                 a(href='#!') three|       
+            .input-field.col.s12
+              select
+                  option(value='', disabled='', selected='') Choose your option      
+                  option(value='1') Option 1    
+                  option(value='2') Option 2
+                  option(value='3') Option 3 
+              label Colonia  
+              select.browser-default
+                option(value='', disabled='', selected='') Choose your option    
+                option(value='1') Option 1      
+                option(value='2') Option 2     
+                option(value='3') Option 3 
+              form(action='#')
+                p.range-field
+                  input#test5(type='range', min='0', max='100')    
+              form(action='#')
+                p.range-field
+                  input#test5(type='range', min='0', max='100')    
           .col.s12.m8.l15
             ul.collection
             li.collection-item 

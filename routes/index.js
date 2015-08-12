@@ -25,6 +25,10 @@ router.get('/confirm', function (req, res, next) {
 router.get('/columnas', function (req, res, next) {
   res.render('column', { title: 'Express' });
 });
+
+router.get('/side', function (req, res, next) {
+  res.render('sidebar', { title: 'Express' });
+});
 /*jslint unparam: false */
 
 module.exports = router;
