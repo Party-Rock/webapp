@@ -21,6 +21,10 @@ router.get('/search', function (req, res, next) {
 router.get('/confirm', function (req, res, next) {
   res.render('confirmar_renta', { title: 'Express' });
 });
+
+router.get('/columnas', function (req, res, next) {
+  res.render('column', { title: 'Express' });
+});
 /*jslint unparam: false */
 
 module.exports = router;
