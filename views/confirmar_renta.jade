@@ -1,22 +1,25 @@
 extends layout
 //link href= "materialize/dist/css/materialize.min.css"
 block content
+    .parallax-container
+        .container
+               h1.header.center.red-text.text-lighten-2 Confirmar compra
     #index-banner.parallax-container
       .section.no-pad-bot
         .container
           .slider
             ul.slides
               li
-                img(src='http://lorempixel.com/580/250/nature/1')  
+                img(src='images/image1.jpg')  
               li
-                img(src='http://lorempixel.com/580/250/nature/2')
+                img(src='images/image2.jpg')
               li
-                img(src='http://lorempixel.com/580/250/nature/3')    
+                img(src='images/image3.jpg')    
               li
-                img(src='http://lorempixel.com/580/250/nature/4')
+                img(src='images/image4.jpg')
     .container
       .section
-        // Icon Section
+        input.datepicker(type='date')
         input.datepicker(type='date')
       .row.center
             a#download-button.btn-large.waves-effect.waves-light.blue.lighten-1(href='http://materializecss.com/getting-started.html') Rentar
