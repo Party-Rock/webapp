@@ -3,11 +3,16 @@ html(lang='en')
   head
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+<<<<<<< HEAD
     title Party Rock
+=======
+    title Parallax Template - Materialize
+>>>>>>> feature/repairbrokencode
     // CSS
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     link(href='materialize/dist/css/materialize.min.css', type='text/css', rel='stylesheet', media='screen,projection')
     link(href='materialize/templates/parallax-template/css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+<<<<<<< HEAD
     script(src='webcomponentsjs/webcomponents.min.js')
     link(rel='import', href='google-map/google-map.html')
 
@@ -35,5 +40,25 @@ html(lang='en')
     script(src='jquery/dist/jquery.min.js', type='text/javascript')
     script(src='materialize/dist/js/materialize.min.js', type='text/javascript')
     script(src='js/custom.js', type='text/javascript')
+=======
+    link(href='stylesheets/map.css', type='text/css', rel='stylesheet')
+    script(src='webcomponentsjs/webcomponents.min.js')
+
+    link(rel='import', href='google-map/google-map.html')
+  body
+    nav.white(role='navigation')
+      .nav-wrapper.container
+        a#logo-container.brand-logo(href='#') Logo
+        ul.right.hide-on-med-and-down
+          li
+            a(href='#') Sign in 
+        ul.right.hide-on-med-and-down
+          li
+            a(href='#') Register      
+         
+        a.button-collapse(href='#', data-activates='nav-mobile')
+          i.material-icons menu
+    block content
+>>>>>>> feature/repairbrokencode
 
     block scripts
