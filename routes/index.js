@@ -11,7 +11,6 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-<<<<<<< HEAD
 router.get('/second', function (req, res, next) {
   res.render('second_view', { title: 'Express' });
 });
@@ -30,10 +29,6 @@ router.get('/columnas', function (req, res, next) {
 
 router.get('/side', function (req, res, next) {
   res.render('sidebar', { title: 'Express' });
-=======
-router.get('/search', function (req, res, next) {
-  res.render('search', { title: 'Express' });
->>>>>>> feature/repairbrokencode
 });
 /*jslint unparam: false */
 
