@@ -1,0 +1,97 @@
+extends base_with_navbar
+block content
+  #index-banner.parallax-container
+    .section.no-pad-bot
+      .container
+        .col
+         .col.s12.m4.l4
+            .input-field.col.s12
+            select.browser-default.black-text
+              option(value='', disabled='', selected='') Elige colonia 
+              option(value='1') Condesa    
+              option(value='2') Roma
+              option(value='3') Polanco 
+              label Colonia  
+            form(action='#') 
+              p.range-field 
+                input#test5(type='range', min='0', max='100')
+            form(action='#')
+              p.range-field 
+                input#test5(type='range', min='0', max='100')    
+          .col.s12.m8.l15
+            ul.collection
+            li.card1.collection-item 
+              .row.center
+                .col.s12.m7
+                  .card.large
+                    .card-image.waves-effect.waves-block.waves-light
+                        img.activator(src='images/casa-chida-1.jpg')
+                      .card-content
+                        span.card-title.activator.grey-text.text-darken-4
+                          | Casa hermosa frente al lago
+                          i.material-icons.right       
+                        p
+                        a(href='/second') Rentar
+                      .card-reveal
+                        span.card-title.grey-text.text-darken-4
+                          | Card Title
+                          i.material-icons.right close      
+                        p
+                        | Here is some more information about this product that is only revealed once clicked on.            
+            li.card2
+              .collection-item
+              .row
+                .col.s12.m7
+                  .card.large
+                    .card-image.waves-effect.waves-block.waves-light
+                        img.activator(src='images/casa-chida-2.jpg')
+                      .card-content
+                        span.card-title.activator.grey-text.text-darken-4
+                          | Casa rustica en el bosque
+                          i.material-icons.right      
+                        p
+                        a(href='#') Rentar
+                      .card-reveal
+                        span.card-title.grey-text.text-darken-4
+                          | Card Title
+                          i.material-icons.right close      
+                        p
+                        | Here is some more information about this product that is only revealed once clicked on.
+            li.card3.collection-item 
+              .row
+                .col.s12.m7
+                  .card.large
+                    .card-image.waves-effect.waves-block.waves-light
+                        img.activator(src='images/casa-chida-3.jpg')
+                      .card-content
+                        span.card-title.activator.grey-text.text-darken-4
+                          | Depa lujo en el mar
+                          i.material-icons.right     
+                        p
+                        a(href='#') Rentar
+                      .card-reveal
+                        span.card-title.grey-text.text-darken-4
+                          | Card Title
+                          i.material-icons.right close      
+                        p
+                        | Here is some more information about this product that is only revealed once clicked on.
+
+            li.card4.collection-item 
+              .row
+                .col.s12.m7
+                  .card.large
+                    .card-image.waves-effect.waves-block.waves-light
+                        img.activator(src='images/casa-chida-4.jpg')
+                      .card-content
+                        span.card-title.activator.grey-text.text-darken-4
+                          | Casa area tranquila montaña
+                          i.material-icons.right     
+                        p
+                        a(href='#') Rentar
+                      .card-reveal
+                        span.card-title.grey-text.text-darken-4
+                          | Card Title
+                          i.material-icons.right close      
+                        p
+                        | Here is some more information about this product that is only revealed once clicked on.
+       

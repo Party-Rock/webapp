@@ -1,0 +1,12 @@
+google-map {
+    width: 100%;
+    height: 400px;
+}
+
+.no-min-height{
+	min-height: 0;
+}
+
+.black-text {
+	color:black;
+}
