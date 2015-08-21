@@ -1,7 +1,7 @@
 extends layout
 //link href= "materialize/dist/css/materialize.min.css"
 block content
-    .parallax-container
+    .parallax-container.no-min-height
         .container
                h1.header.center.red-text.text-lighten-2 Confirmar compra
     #index-banner.parallax-container
@@ -19,8 +19,10 @@ block content
                 img(src='images/image4.jpg')
     .container
       .section
+        a.btn-large.waves-effect.waves-light.red.lighten-1 elegir fecha de entrada
         input.datepicker(type='date')
+        a.btn-large.waves-effect.waves-light.red.lighten-1 elegir fecha de salida
         input.datepicker(type='date')
       .row.center
-            a#download-button.btn-large.waves-effect.waves-light.blue.lighten-1(href='http://materializecss.com/getting-started.html') Rentar
+            a#download-button.btn-large.waves-effect.waves-light.blue.lighten-1 Rentar
     

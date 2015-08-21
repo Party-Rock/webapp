@@ -6,23 +6,18 @@ block content
         .col
          .col.s12.m4.l4
             .input-field.col.s12
-              select
-                  option(value='', disabled='', selected='') Elige colonia 
-                  option(value='1') Condesa    
-                  option(value='2') Roma
-                  option(value='3') Polanco 
+            select.browser-default.black-text
+              option(value='', disabled='', selected='') Elige colonia 
+              option(value='1') Condesa    
+              option(value='2') Roma
+              option(value='3') Polanco 
               label Colonia  
-              select.browser-default
-                option(value='', disabled='', selected='') Elige colonia  
-                option(value='1') Condesa     
-                option(value='2') Roma     
-                option(value='3') Polanco
-              form(action='#') 
-                p.range-field 
-                  input#test5(type='range', min='0', max='100')
-              form(action='#')
-                p.range-field 
-                  input#test5(type='range', min='0', max='100')    
+            form(action='#') 
+              p.range-field 
+                input#test5(type='range', min='0', max='100')
+            form(action='#')
+              p.range-field 
+                input#test5(type='range', min='0', max='100')    
           .col.s12.m8.l15
             ul.collection
             li.card1.collection-item 
