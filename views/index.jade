@@ -1,5 +1,80 @@
-extends layout
-
+extends base_with_navbar
+//extends layout
+//link href= "materialize/dist/css/materialize.min.css"
 block content
-  h1= title
-  p Welcome to #{title}
+    #index-banner.parallax-container
+      .section.no-pad-bot
+        .container
+          br
+          br
+          |         
+          h1.header.center.red-text.text-lighten-2 Party Rock
+          |         
+          .row.center
+            h5.header.black-text.col.s12.dark Las fiestas de tus sueños
+          |         
+          .row.center
+<<<<<<< HEAD
+<<<<<<< HEAD
+            a.btn-large.waves-effect.waves-light.red.lighten-1(href='/search') Explora
+=======
+            a#download-button.btn-large.waves-effect.waves-light.red.lighten-1(href='http://materializecss.com/getting-started.html') Explora
+>>>>>>> feature/view
+=======
+            a.btn-large.waves-effect.waves-light.red.lighten-1(href='/search' ) Explora
+>>>>>>> feature/repairbrokencode
+          |         
+          br
+          br
+      |     
+      .parallax
+        img(src='images/background1.jpg', alt='Unsplashed background img 1')
+    |   
+    .container
+      .section
+        // Icon Section
+        .row
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons flash_on
+              |             
+              h5.center Encuentra tu casa ideal!
+              |             
+              p.light
+                | Alguna vez has querido armar una fiesta inolvidable? Aqui podras encontrar el lugar ideal en pocos segundos!
+          |         
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons group
+              |             
+              h5.center Tu fiesta quedara en las inolvidables!
+              |             
+              p.light
+                | Nosotros nos encargamos de que con el click de un botón hagas historia!
+          |         
+          .col.s12.m4
+            .icon-block
+              h2.center.red-text
+                i.material-icons settings
+              |             
+              h5.center Diviertete!
+              |             
+              p.light
+                | Relajate y disfruta, estas fiestas no se dan todos los dias
+    |   
+    .parallax-container.valign-wrapper
+      .section.no-pad-bot
+        .container
+          .row.center
+            h5.header.col.s12.light 
+      |     
+      .parallax
+        img(src='images/background3.jpg', alt='Unsplashed background img 3')
+    // Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    |   
+    script(src='materialize/dist/js/materialize.min.js')
+    |   
+    script(src='materialize/templates/parallax-template/js/init.js')
